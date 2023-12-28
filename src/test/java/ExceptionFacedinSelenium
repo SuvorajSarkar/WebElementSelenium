@@ -1,0 +1,9 @@
+Selenium WebDriver Exception
+
+1-SessionNOtCreatedException-when browser failed to start
+2-Invalid argument exception--when no http or https is provide
+3-java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+          Example - WebElement username=driver.findElement(By.id(null));
+4- NoSuchElementException --if element not found
+5-ElementNotInteractableException:element not interactable- when element field is disabled
+ 
