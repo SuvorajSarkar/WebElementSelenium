@@ -1,0 +1,73 @@
+XPath
+  Absolute
+  Relative
+  Relative+Abs
+html/body/input/li/div/span
+
+Relative
+//
+
+
+1.Syntax - finding element with tag name(select line->control + f)
+(//tagname)
+//a 
+//img
+//input
+//select
+//span
+//*
+
+2- Finding element with  single attribute and value
+Case sensitive
+'' and "" allowed
+
+//tagname[@attribute='value']
+//input[@id='email1']
+//input[@id="email1"]
+//input[@placeholder="Email"]
+//input[@type="email"]
+
+//button[@class='submit-btn']
+
+3- Finding element with multiple attribute and value
+//tagname[@attribute1='value1' and @attribute2='value2']
+//input[@id="email1" and @placeholder="Email"]
+                  or
+//tagname[@attribute1='value1' or @attribute2='value2']  
+//input[@id="email1" or @placeholder="Email"]
+
+4- index based XPath
+ (XPath) [index]
+ (//a)[0]
+
+5- contains function
+// tagname[contains(@attribute,'value')]
+//input[contains(@id,'email')]
+//input[contains(@id,'mail')]
+//input[contains(@name,'password')]
+//input[contains(@name,'pass')]
+//a[contains(@href,'signup')]
+//img[contains(@src,'facebook')]
+
+6- text() function
+//tagname[text()='text to find']
+//a[text()='Practise']
+//a[text()='New user? signup']
+//a[text()='Connect with us']
+//*[text()='Connect with us']
+
+7- New user? signup
+   New user? Create your account now
+   New user? join us
+   New user? Click here to create new account
+
+   text function with contains
+   //tagname[contains(text(),'text which you are looking for')]
+   //a[contains(text(),'New User')]
+   //a[contains(text(),'New')]
+
+
+   What is the difference b/w
+          //a[text()='Practise']
+                   v/s
+          //a[normalize-space()='Practise']

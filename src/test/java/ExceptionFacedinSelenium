@@ -6,4 +6,5 @@ Selenium WebDriver Exception
           Example - WebElement username=driver.findElement(By.id(null));
 4- NoSuchElementException --if element not found
 5-ElementNotInteractableException:element not interactable- when element field is disabled
- 
+6-InvalidSelectorsException : when selector is not valid
+
