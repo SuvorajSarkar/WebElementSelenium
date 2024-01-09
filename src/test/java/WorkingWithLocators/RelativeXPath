@@ -4,8 +4,11 @@ XPath
   Relative+Abs
 html/body/input/li/div/span
 
-Relative
-//
+
+
+
+//Relative 
+
 
 
 1.Syntax - finding element with tag name(select line->control + f)
@@ -71,3 +74,7 @@ Case sensitive
           //a[text()='Practise']
                    v/s
           //a[normalize-space()='Practise']
+          <a href ="as"> click here </a>
+    //a[text=' click here ']
+    //a[contains(text(),'click here')]
+    //a[normalize-space()='click here'] -->it remove spaces

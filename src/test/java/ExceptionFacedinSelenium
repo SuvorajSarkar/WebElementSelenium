@@ -7,4 +7,6 @@ Selenium WebDriver Exception
 4- NoSuchElementException --if element not found
 5-ElementNotInteractableException:element not interactable- when element field is disabled
 6-InvalidSelectorsException : when selector is not valid
-
+7- NoSuchWindowException  :Target window already closed
+8 - UnexpectedTagNameException : when you use select class in selenium but element does not have
+9- 

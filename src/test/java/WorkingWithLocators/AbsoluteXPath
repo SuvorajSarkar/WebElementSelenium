@@ -1,0 +1,122 @@
+/html/body/div[1]/div[2]/ul/li[1]/a/b
+
+combination
+
+//ul[contains(@id,'mainMenu')]/li/a/b
+
+//ul[contains(@id,'mainMenu')]//b
+
+//ul[contains(@id,'mainMenu')]/b
+
+//table[@id='resultTable']/tbody/tr/td/a
+
+//table[@id='resultTable']//a
+
+//table[@id='resultTable']/tbody/tr/td/input[@type='checkbox']
+
+//table[@id='resultTable']//input[@type='checkbox']
+
+					XPath Axes for traverse
+					
+	//syntax
+	//XPath//following::tagname
+	//XPath//preceding::tagname
+	Match all elements after suvoraj				
+//a[text()='Suvoraj']//following::*  
+Match all elements before suvoraj
+//a[text()='Suvoraj']//preceding::*	  
+
+Match all elements first td after suvoraj
+//a[text()='Suvoraj']//following::td[1]
+
+Match all elements second td after suvoraj
+//a[text()='Suvoraj']//following::td[2]
+
+Match all elements third td after suvoraj
+//a[text()='Suvoraj']//following::td[3]
+
+Match with the first input before suvoraj
+//a[text()='suvoraj']//preceding::input[1]
+
+Find first dropdown after User Role
+//*[text()='User Role']//following::select[1]
+
+find first input after Confirm Password
+//*[text()='Confirm Password']//following::input[1]
+
+find first dropdown after Status
+//*[text()='Status']//following::select[1]
+
+
+//input[contains(@id,'password1')]//parent::div//following-sibling::*
+
+To reach parent node you parent :: tagname
+//a[text()='suvo']//parent::td
+//a[text()='suvo']//..
+
+To reach child node
+//child::tagname
+
+
+								CSS SELECTORS
+	
+	Text function is not present
+	Traverse in back direction not allowed
+	
+	ID->#,class->.,contains->*,Starts with->^,End with->$
+	
+	Examples
+		#txtUsername
+		input#txtUsername
+	Syntax
+	tagname[attribute='value']
+	input[name='txtUsername']
+			v/s
+	//input[@name='txtUsername'] for XPath selectors
+	input.button
+	input[value='LOGIN']
+	td[class*='dt-body']
+	input[class$='dt-body']
+	
+	div#social
+	div[id='social']
+	
+	div[id='social'] a
+	
+	div[id='social']>a
+	
+	div[id='social'] a:nth-child(2)
+	div[id='social'] a:first-child
+	div[id='social'] a:second-child
+	div[id='social'] a:last-child	
+	div[id='social'] a:nth-of-type(2)
+	
+	
+	
+	
+	
+									CONCLUSION
+	Locators
+	ID
+	name
+	className
+	linkText
+	partialLinkText
+	xpath
+	css
+	tagname	
+	
+	Relative Locators in selenium 4
+	
+	//input[@aria-label='surname']
+	
+	//div[@id='dropdowngroup1']//div//ul/li/a
+	
+	//div[@id='dropdowngroup1']//a[text()='Bangalore'] it will better
+	
+	
+	
+	
+	
+	
+	
