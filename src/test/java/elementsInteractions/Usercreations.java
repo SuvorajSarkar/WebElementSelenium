@@ -16,10 +16,15 @@ public class Usercreations {
 		 */
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.xpath("//a[text()='Create new account']")).click();
-		Thread.sleep(50000);
+		Thread.sleep(3000);
 		driver.findElement(By.name("firstname")).sendKeys("suvo");
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@aria-label='Surname']")).sendKeys("sarkar");
-		//WebElement monthDropdown = driver.findElement(By.cssSelector("select[title='Month']"));
+		Thread.sleep(2000);
+		
+		
+		// WebElement monthDropdown =
+		// driver.findElement(By.cssSelector("select[title='Month']"));
 
 		Select month = new Select(driver.findElement(By.cssSelector("select[title='Month']")));
 		// select 4th value
@@ -32,9 +37,7 @@ public class Usercreations {
 		Thread.sleep(2000);
 		// select Aug
 		month.selectByVisibleText("Aug");
-		
-	
-	
+
 		System.out.println(month.getFirstSelectedOption().getText());
 	}
 }
