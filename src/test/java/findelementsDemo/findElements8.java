@@ -12,9 +12,12 @@ public class findElements8 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		WebElement element= driver.findElement(By.id("email"));
+		//it gives us StaleElementReferenceException
+		element.click();
 		Thread.sleep(2000);
 		element.sendKeys("suvoraj");
 		driver.navigate().refresh();
+		//it gives us StaleElementReferenceException
 		element.sendKeys("suvo");
 	}
 }

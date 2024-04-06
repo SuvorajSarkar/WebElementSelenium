@@ -2,8 +2,11 @@ Selenium WebDriver Exception
 
 1-SessionNOtCreatedException-when browser failed to start
 2-Invalid argument exception--when no http or https is provide
-3-java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+3-IllegalArgumentException: Keys to send should be a not null CharSequence
           Example - WebElement username=driver.findElement(By.id(null));
+          Another scenario- when try to upload file but path is incorrect.
+          
+          
 4- NoSuchElementException --if element not found
 5-ElementNotInteractableException:element not interactable- when element field is disabled
 6-InvalidSelectorsException : when selector is not valid
@@ -12,3 +15,11 @@ Selenium WebDriver Exception
 9- StaleElementReferenceException: stale element reference: stale element not found or
 element loosing its reference or not attached to DOM
   
+10-ElementNotInteractableException: element not interactable
+to handle this exception maximize the window ex:- driver.manage().window().maximize();
+
+11-unhandledAlertExcetion - whenever alert/confirm/prompt is active and if u try to capture screenshot  try interact to element. 
+12- NoAlertPresentException- when alert is not present
+13- NoSuchWindowException -If window handle Does not exist
+
+14- NoSuchSessionException - if we call quit then try to access again 
